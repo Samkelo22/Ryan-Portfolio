@@ -39,3 +39,9 @@ window.addEventListener('scroll', () => {
     heroBg.style.transform = `scale(1.08) translateY(${y * 0.25}px)`;
   }
 });
+
+document.querySelectorAll('.card').forEach(card => {
+  card.addEventListener('click', (e) => {
+    e.preventDefault();
+  });
+});
